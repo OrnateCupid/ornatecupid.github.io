@@ -1,12 +1,16 @@
 {% if page.mathjax %}
-<script type="text/javascript">
-  MathJax = {
-    options: {
-      skipHtmlTags: [
-        'script', 'noscript', 'style', 'textarea', 'pre', 'code'
-      ]
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      // 在这里加入了 '$' 作为行内公式的定界符
+      inlineMath: [['$','$'], ['\\(','\\)']],
+      // 允许使用 \$ 来转义美元符号（显示普通文本的美元符号）
+      processEscapes: true,
+      // 忽略不需要渲染的标签
+      skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
     }
-  };
+  });
 </script>
+
 <script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 {% endif %}
