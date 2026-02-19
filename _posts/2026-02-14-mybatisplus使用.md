@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Mybatis Plus 避免踩坑
+title: Mybatis Plus 的雪花 ID 问题
 tags: [Mybatis Plus, 雪花 ID, 后端开发技巧]
 ---
 
