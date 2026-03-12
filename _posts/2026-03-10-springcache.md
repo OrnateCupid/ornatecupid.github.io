@@ -6,7 +6,9 @@ tags: [Spring Cache, spring, 后端开发技巧]
 
 ### Spring Cache
 
+
 > 启用 Spring Cache 要在启动类或配置类加 `@EnableCache`
+
 
 1. 常用注解
     1. `@Cacheable`
